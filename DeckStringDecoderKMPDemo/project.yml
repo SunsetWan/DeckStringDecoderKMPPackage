@@ -40,6 +40,9 @@ targets:
       - DeckStringDecoderKMPDemoTests
     dependencies:
       - target: DeckStringDecoderKMPDemo
+    settings:
+      base:
+        GENERATE_INFOPLIST_FILE: YES
 schemes:
   DeckStringDecoderKMPDemo:
     build:
