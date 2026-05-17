@@ -2,7 +2,7 @@
 
 SwiftPM binary package wrapper for the KMP/SKIE build of `DeckStringDecoder`.
 
-This repository is the public SwiftPM entry point. The private/source repository remains responsible for Kotlin Multiplatform source, tests, and XCFramework generation.
+This repository is the public SwiftPM entry point. The KMP source repository remains responsible for Kotlin Multiplatform source, tests, XCFramework generation, and release automation.
 
 ## Installation
 
@@ -15,7 +15,7 @@ https://github.com/SunsetWan/DeckStringDecoderKMPPackage.git
 Use version:
 
 ```text
-0.1.0-kmp.1
+0.1.0-kmp.2
 ```
 
 Import the module as before:
@@ -30,29 +30,24 @@ The current binary artifact contains iOS device and iOS Simulator slices only. I
 
 ## Artifact
 
-- Release tag: `0.1.0-kmp.1`
+- Release tag: `0.1.0-kmp.2`
 - Asset: `DeckStringDecoder.xcframework.zip`
-- URL: `https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.1/DeckStringDecoder.xcframework.zip`
-- Checksum: `f4e918c615c3da0667f2e5c747ce798521c313fd03eee099a47a39972cd9de17`
+- URL: `https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.2/DeckStringDecoder.xcframework.zip`
+- Checksum: `27a297695a500486549462ec4d4b2a7d8bbf2c70a80a18f44b25a221f8d9a6d7`
 
 The SwiftPM manifest uses:
 
 ```swift
 .binaryTarget(
     name: "DeckStringDecoder",
-    url: "https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.1/DeckStringDecoder.xcframework.zip",
-    checksum: "f4e918c615c3da0667f2e5c747ce798521c313fd03eee099a47a39972cd9de17"
+    url: "https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.2/DeckStringDecoder.xcframework.zip",
+    checksum: "27a297695a500486549462ec4d4b2a7d8bbf2c70a80a18f44b25a221f8d9a6d7"
 )
 ```
 
 ## Updating a Release
 
-1. Build a new release `DeckStringDecoder.xcframework` in the source repository.
-2. Zip it as `DeckStringDecoder.xcframework.zip` with `DeckStringDecoder.xcframework` at the zip root.
-3. Run `swift package compute-checksum DeckStringDecoder.xcframework.zip`.
-4. Upload the zip to this repository's GitHub Release for the new tag.
-5. Update `Package.swift`, `CHANGELOG.md`, and `releases/<tag>.md` with the new URL and checksum.
-6. Run `scripts/verify-public-consumer.sh`.
+Releases are generated from `DeckStringDecoderKMP` through its manual release workflow. That workflow builds the XCFramework zip, verifies checksum and module interface contents, updates this wrapper repo, creates the GitHub Release, uploads `DeckStringDecoder.xcframework.zip`, downloads it from the public URL, and runs the public consumer tests.
 
 ## Verification
 
