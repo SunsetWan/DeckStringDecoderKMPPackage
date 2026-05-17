@@ -4,7 +4,7 @@ import PackageDescription
 let package = Package(
     name: "DeckStringDecoderPublicConsumer",
     platforms: [
-        .iOS(.v16),
+        .iOS(.v15),
     ],
     products: [
         .library(
@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/SunsetWan/DeckStringDecoderKMPPackage.git",
-            exact: "0.1.0-kmp.2"
+            exact: "0.1.0-kmp.3"
         ),
     ],
     targets: [

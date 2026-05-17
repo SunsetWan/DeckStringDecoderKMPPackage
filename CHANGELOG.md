@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.0-kmp.3
+
+- Lowered the public SwiftPM wrapper platform to iOS 15.
+- Updated the SwiftPM binary target URL to `https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.3/DeckStringDecoder.xcframework.zip`.
+- Added `DeckStringDecoderKMPDemo`, an iOS 15 SwiftUI app that consumes the public binary package and displays decoded DBF ID/count rows, including sideboard owner markers.
+- Added an iOS demo XCTest target and `scripts/verify-ios-demo.sh`.
+
 ## 0.1.0-kmp.2
 
 - Updated the SwiftPM binary target URL to `https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.2/DeckStringDecoder.xcframework.zip`.

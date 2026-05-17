@@ -15,7 +15,7 @@ https://github.com/SunsetWan/DeckStringDecoderKMPPackage.git
 Use version:
 
 ```text
-0.1.0-kmp.2
+0.1.0-kmp.3
 ```
 
 Import the module as before:
@@ -30,9 +30,9 @@ The current binary artifact contains iOS device and iOS Simulator slices only. I
 
 ## Artifact
 
-- Release tag: `0.1.0-kmp.2`
+- Release tag: `0.1.0-kmp.3`
 - Asset: `DeckStringDecoder.xcframework.zip`
-- URL: `https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.2/DeckStringDecoder.xcframework.zip`
+- URL: `https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.3/DeckStringDecoder.xcframework.zip`
 - Checksum: `27a297695a500486549462ec4d4b2a7d8bbf2c70a80a18f44b25a221f8d9a6d7`
 
 The SwiftPM manifest uses:
@@ -40,7 +40,7 @@ The SwiftPM manifest uses:
 ```swift
 .binaryTarget(
     name: "DeckStringDecoder",
-    url: "https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.2/DeckStringDecoder.xcframework.zip",
+    url: "https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.3/DeckStringDecoder.xcframework.zip",
     checksum: "27a297695a500486549462ec4d4b2a7d8bbf2c70a80a18f44b25a221f8d9a6d7"
 )
 ```
@@ -55,6 +55,9 @@ This repository includes a minimal public consumer under `Verification/Consumer`
 
 ```sh
 scripts/verify-public-consumer.sh
+scripts/verify-ios-demo.sh
 ```
 
 The consumer verifies `import DeckStringDecoder`, `DeckStringDecoder()` construction, decode, encode round trip, sideboard decoding, and error mapping through the Swift-facing API only.
+
+`DeckStringDecoderKMPDemo` is an iOS 15 SwiftUI demo that consumes the public SwiftPM binary package. It accepts a deck code string, decodes it through `DeckStringDecoder().decode(_:)`, and displays the format, heroes, main-card count, sideboard count, and DBF ID/count rows.
