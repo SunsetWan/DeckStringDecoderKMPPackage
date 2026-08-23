@@ -15,7 +15,7 @@ let package = Package(
     dependencies: [
         .package(
             url: "https://github.com/SunsetWan/DeckStringDecoderKMPPackage.git",
-            exact: "0.1.0-kmp.3"
+            exact: "0.1.0-kmp.4"
         ),
     ],
     targets: [
