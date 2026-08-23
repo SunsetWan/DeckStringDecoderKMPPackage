@@ -15,7 +15,7 @@ https://github.com/SunsetWan/DeckStringDecoderKMPPackage.git
 Use version:
 
 ```text
-0.1.0-kmp.4
+0.1.0-kmp.5
 ```
 
 Import the module as before:
@@ -30,18 +30,18 @@ The current binary artifact contains iOS device and iOS Simulator slices only. I
 
 ## Artifact
 
-- Release tag: `0.1.0-kmp.4`
+- Release tag: `0.1.0-kmp.5`
 - Asset: `DeckStringDecoder.xcframework.zip`
-- URL: `https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.4/DeckStringDecoder.xcframework.zip`
-- Checksum: `ff9885585dd56d69ea17c32b9986f2377fcce01155f726609a2e6eed9584fae3`
+- URL: `https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.5/DeckStringDecoder.xcframework.zip`
+- Checksum: `c3f1e218e3146363ec1cafd37b7a406da2fdd7694328b55aead6077fc3e50ccb`
 
 The SwiftPM manifest uses:
 
 ```swift
 .binaryTarget(
     name: "DeckStringDecoder",
-    url: "https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.4/DeckStringDecoder.xcframework.zip",
-    checksum: "ff9885585dd56d69ea17c32b9986f2377fcce01155f726609a2e6eed9584fae3"
+    url: "https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.5/DeckStringDecoder.xcframework.zip",
+    checksum: "c3f1e218e3146363ec1cafd37b7a406da2fdd7694328b55aead6077fc3e50ccb"
 )
 ```
 

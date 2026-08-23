@@ -15,8 +15,8 @@ let package = Package(
     targets: [
         .binaryTarget(
             name: "DeckStringDecoder",
-            url: "https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.4/DeckStringDecoder.xcframework.zip",
-            checksum: "ff9885585dd56d69ea17c32b9986f2377fcce01155f726609a2e6eed9584fae3"
+            url: "https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.5/DeckStringDecoder.xcframework.zip",
+            checksum: "c3f1e218e3146363ec1cafd37b7a406da2fdd7694328b55aead6077fc3e50ccb"
         ),
     ]
 )

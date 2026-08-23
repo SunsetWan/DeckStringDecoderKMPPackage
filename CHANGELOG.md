@@ -1,11 +1,17 @@
 # Changelog
 
+## 0.1.0-kmp.5
+
+- Updated the SwiftPM binary target URL to `https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.5/DeckStringDecoder.xcframework.zip`.
+- Updated the SwiftPM checksum to `c3f1e218e3146363ec1cafd37b7a406da2fdd7694328b55aead6077fc3e50ccb`.
+- Release automation verified the local artifact, public download checksum, and public consumer tests.
+
+
 ## 0.1.0-kmp.4
 
 - Updated the SwiftPM binary target URL to `https://github.com/SunsetWan/DeckStringDecoderKMPPackage/releases/download/0.1.0-kmp.4/DeckStringDecoder.xcframework.zip`.
 - Updated the SwiftPM checksum to `ff9885585dd56d69ea17c32b9986f2377fcce01155f726609a2e6eed9584fae3`.
 - Release automation verified the local artifact, public download checksum, and public consumer tests.
-
 
 ## 0.1.0-kmp.3
 
