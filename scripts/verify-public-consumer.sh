@@ -8,8 +8,9 @@ IOS_SIMULATOR_DESTINATION="${IOS_SIMULATOR_DESTINATION:-platform=iOS Simulator,n
 
 cd "$CONSUMER_DIR"
 
+test "$(xcsift --version)" = "1.3.2-sunset.2"
 xcodebuild \
   -scheme DeckStringDecoderPublicConsumer \
   -destination "$IOS_SIMULATOR_DESTINATION" \
   -derivedDataPath .build/xcode-derived-data \
-  test
+  test 2>&1 | xcsift --exit-on-failure

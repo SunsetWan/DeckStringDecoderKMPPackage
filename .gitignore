@@ -4,3 +4,6 @@ Package.resolved
 Verification/Consumer/.build/
 Verification/Consumer/.swiftpm/
 Verification/Consumer/DerivedData/
+
+Artifacts/*.zip
+swiftpm-binary/Artifacts/*.zip
